@@ -12,13 +12,18 @@ body{background:url("/img/dark_exa.png")}
 .fa-pencil,.fa-book{margin-right:4px}
 .btn-default{border:1px solid #f0f0f0;color:#f0f0f0;}
 .btn-default:hover,.btn-default:focus{background-color:#2d66bd;border:solid 1px #f0f0f0;color:#f0f0f0}
+#contact{height:600px;}
 #contact a{color:#f0f0f0;text-decoration:underline;}
 #contact a:hover{color:#f0f0f0;opacity:.7;text-decoration:underline;cursor:pointer}
 #colophonModal{color:#0f0f0f;}
 #colophonModal .modal-content{background:#2d66bd;border-radius:10px;color:#f0f0f0}
-#colophonModal .modal-body a{color:#f0f0f0;cursor:pointer;text-decoration:underline}
+#colophonModal .modal-body a{color:#f0f0f0;cursor:pointer;}
+#colophonModal .modal-body a:hover{text-decoration:underline}
 #colophonModal .modal-header{border-bottom:none;text-align:center}
-#colophonModal dd{margin-left:2em}
+#colophonModal dl{margin:0 auto;width:200px}
+#colophonModal dt{font-size:1.25em}
+#colophonModal dd{margin-left:1em;margin-bottom:7px}
+#guestbookModal{color:#000}
 @media screen and (min-width: 767px){.intro .brand-heading{font-size:130px}
 #about{padding-top:150px;}
 #about .row{width:750px}

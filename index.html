@@ -7,7 +7,7 @@
     <meta name="description" content="A virtual guest book for Brandon and Karilyn's wedding.">
     <meta name="author" content="Site assembled by Nick Engeldinger">
 
-    <title>Brandon and Karilyn</title>
+    <title>Karilyn and Brandon</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">
-                            Brandon<br />&amp;<br />Karilyn
+                            Karilyn<br />&amp;<br />Brandon
                         </h1>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
@@ -103,10 +103,10 @@
                 </h2>
                 <i class="fa fa-5x fa-heart-o"></i>
                 <p>
-                     Friends of both Brandon and Karilyn can attest to their obvious fondness for each other. They truly are a natural fit and their marriage a matter of due course for a couple as loving and dedicated as they are to one another. Anyone who spends anytime around them knows that laughter and love abound in their family. Together they look forward to a bright and prosperous future.
+                     Friends of both Karilyn and Brandon can attest to their fondness for each other. They truly are a natural fit and their marriage a matter of due course for a couple as loving and dedicated as they are to one another. Anyone who spends anytime around them knows that laughter and love abound in their family. Together they look forward to a bright and prosperous future.
                 </p>
                 <p>
-                    Karilyn and her son Jadyn joined Brandon and his children Davion, Malaya, and Amari. Together they welcomed Kymani, and soon after Shayliana arrived to round out their beautiful family. From toddlers to teenagers there is no shortage of youthful energy and joy in their loving home.
+                    Karilyn and her son Jayden joined Brandon and his children Davion, Malaya, and Amari. Together they welcomed Kymani and soon after Shayliana arrived to round out their beautiful family. From toddlers to teenagers there is no shortage of youthful energy and joy in their loving home.
                 </p> 
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <h2>Guestbook</h2>
                     <ul class="list-inline">
                         <li>
-                            <button class="btn btn-default btn-lg">
+                            <button class="btn btn-default btn-lg" type="button" data-toggle="modal" data-target="#guestbookModal">
                                 <i class="fa fa-pencil"></i>
                                 Sign
                             </button>
@@ -136,12 +136,22 @@
         </div>
     </section>
 
+    <section id="guestbook" class="content-section">
+        <div class="guestbook-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <p>
-                    Contact the bride and groom: 
-                    <a mailto="">brandonandkarilynswedding@gmail.com</a>
+                    Contact the bride and groom 
+                    <a mailto="karilynandbrandon@gmail.comcd ~/">karilynandbrandon@gmail.com</a>
                 </P>
                 <p>
                     <button class="btn btn-default" type="button" data-toggle="modal" data-target="#colophonModal">Colophon</button>
@@ -149,6 +159,36 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="guestbookModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="guest_name">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="guest_name" name="guest_text" placeholder="Enter your name" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="guest_msg">Your Message</label>
+                            <div class="col-sm-10">
+                                <textarea id="guest_msg" name="guest_msg" class="form-control" placeholder="Enter your best wishes for the bride and groom..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Add to guestbook</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <div class="modal fade" id="colophonModal">
         <div class="modal-dialog">
@@ -163,7 +203,7 @@
                             Design &amp; development
                         </dt>
                         <dd>
-                            <a mailto="">Nick Engeldinger</a>
+                            <a mailto="nick.engeldinger@gmail.com">Nick Engeldinger</a>
                         </dd>   
                         <dt>
                             Framework
@@ -183,22 +223,22 @@
                             Typography
                         </dt>
                         <dd>
-                            Title &amp; copy:  <a href="">Lora</a><br />
-                            Headings and buttons: <a href="">Montserrat</a>
+                            Title &amp; copy <a href="https://www.google.com/fonts/specimen/Lora">Lora</a><br />
+                            Headings &amp; UI <a href="https://www.google.com/fonts/specimen/Montserrat">Montserrat</a>
                         </dd>
                         
                         <dt>
                             Iconography
                         </dt>
                         <dd>
-                            <a href="">Font Awesome</a>
+                            <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
                         </dd>
                         
                         <dt>
                             Background Patterns
                         </dt>
                         <dd>
-                            <a href="">Subtle Patterns</a>
+                            <a href="http://subtlepatterns.com/">Subtle Patterns</a>
                         </dd>
                     </dl>
                 </div>
@@ -214,6 +254,17 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
-</body>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-47902459-1']);
+        _gaq.push(['_trackPageview']);
 
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
 </html>

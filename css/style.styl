@@ -61,6 +61,7 @@ body
 		color btnColor
 
 #contact
+	height 600px
 	a
 		color btnColor
 		text-decoration underline
@@ -82,14 +83,27 @@ body
 	.modal-body a
 		color btnColor
 		cursor pointer
-		text-decoration underline
+		
+		&:hover
+			text-decoration underline
 
 	.modal-header
 		border-bottom none
 		text-align center 
 
+	dl
+		margin 0 auto
+		width 200px
+
+	dt
+		font-size 1.25em
+
 	dd
-		margin-left 2em
+		margin-left 1em
+		margin-bottom 7px
+
+#guestbookModal
+	color #000
 
 @media screen and (min-width: 767px)
 	.intro

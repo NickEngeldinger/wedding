@@ -17,3 +17,27 @@ $(function() {
         event.preventDefault();
     });
 });
+
+//Guestbook entry validation
+var inputs = [];
+
+var getInputs = function() {
+    $('input, textarea').each(function() {
+        inputs.push(this)
+    });
+};
+
+var validate = function(userInputs) {
+    for ( var i = 0; i < userInputs; i++ ) {
+        if ( $(this).val < 1 ) {
+            $(this).parent().addClass('has-error');
+        }
+        else {
+
+        }
+    }
+};
+
+getInputs();
+console.log(inputs)
+validate(inputs);
